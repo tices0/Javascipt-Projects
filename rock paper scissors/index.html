@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script defer src="code.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- title -->
+    <h1 class="title">Rock Paper Scissors</h1>
+    
+    <!-- score board -->
+    <div class="score-board screen">
+        <div class="score">
+            <div class="score-container">
+                <p class="user bold score-name">user</p>
+                <p class="comp bold score-name">comp</p>
+                <p class="user-score">0</p><span>:</span><div class="comp-score">0</div>
+            </div>
+        </div>
+    </div>
+    <!-- pick -->
+    <p class="pick dark uppercase bold screen">Make your move</p>
+
+    <!-- result from computer's move -->
+    <div class="response screen">
+        <p>Computer chose <b class="comp-choice">Scissors</b>.</p>
+        <div class="bottom">
+            <b class="win-move">Rock</b> beats <b class="lose-move">Scissors</b>.
+            <span class="result">You win!</span>
+        </div>
+    </div>
+
+    <!-- number of rounds form -->
+    <form class="screen show" onsubmit="return false">
+        <p>Enter number of rounds:</p>
+        <input type="text" name="" id="rounds-input">
+    </form>
+
+    <!-- game over -->
+    <div class="end uppercase screen">
+        <p>Game over</p>
+        <h4><span class="winner">You</span> won!</h4>
+    </div>
+
+    <!-- options -->
+    <div class="options">
+        <!-- option 1 -->
+        <button class="option" data-choice="rock">
+            <img src="media/rock.png" alt="">
+            <p class="bold uppercase">Rock</p>
+        </button>
+        <!-- option 2 -->
+        <button class="option" data-choice="paper">
+            <img src="media/paper.png" alt="">
+            <p class="bold uppercase">Paper</p>
+        </button>
+        <!-- option 3 -->
+        <button class="option" data-choice="scissors">
+            <img src="media/scissors.png" alt="">
+            <p class="bold uppercase">Scissors</p>
+        </button>
+    </div>
+
+    <!-- footer -->
+    <div class="rounds bold">
+        <!-- current round -->
+        <p class="round">Round <span id="round">~</span></p>
+        <!-- total rounds -->
+        <p class="total-rounds"><span id="rounds">~</span> total rounds</p>
+    </div>
+</body>
+</html>
