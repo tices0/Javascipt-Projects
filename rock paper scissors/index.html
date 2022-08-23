@@ -29,7 +29,9 @@
     <div class="response screen">
         <p>Computer chose <b class="comp-choice">Scissors</b>.</p>
         <div class="bottom">
-            <b class="win-move">Rock</b> beats <b class="lose-move">Scissors</b>.
+            <p class="moves">
+                <b class="win-move">Rock</b> <span class="beats">beats</span> <b class="lose-move">Scissors</b>
+            </p>
             <span class="result">You win!</span>
         </div>
     </div>
@@ -42,8 +44,11 @@
 
     <!-- game over -->
     <div class="end uppercase screen">
-        <p>Game over</p>
-        <h4><span class="winner">You</span> won!</h4>
+        <div class="left">
+            <p>Game over</p>
+            <h4 class="winner">You won!</h4>
+        </div>
+        <button class="play-again">Play Again</button>
     </div>
 
     <!-- options -->

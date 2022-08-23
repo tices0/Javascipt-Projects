@@ -133,7 +133,9 @@ form {
 
 .end {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    @include flexCenter(row);
+    gap: 1rem;
     display: none;
 
     p {
@@ -142,6 +144,23 @@ form {
 
     h4 {
         font-size: 18px;
+    }
+
+    button {
+        padding: 0.5rem 1rem 0.75rem 1rem;
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        background-color: $option;
+        cursor: pointer;
+        border-radius: 20px;
+        border: none;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-weight: bold;
+
+        &:hover {
+            background-color: $hover-option;
+        }
     }
 }
 
@@ -207,4 +226,8 @@ form {
 
 .show {
     display: block;
+}
+
+.show-flex {
+    display: flex;
 }
