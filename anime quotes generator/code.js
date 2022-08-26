@@ -52,22 +52,22 @@ const options = {
 	},
 };
 
-// fetch("https://anime-quotes1.p.rapidapi.com/api/random", options)
-// 	.then(response => response.json())
-// 	.then(response => {
-// 		console.log(response);
-// 		main.innerHTML = `<div class="single">
-//             <div class="inner">
-//                 <h3>${response.anime}</h3>
-//                 <p>
-//                     ${response.quote}
-//                 </p>
-//                 <h4>~ ${response.character} ~</h4>
-//             </div>
-//         </div>
-//         `;
-// 	})
-// 	.catch(err => console.error(err));
+fetch("https://anime-quotes1.p.rapidapi.com/api/random", options)
+	.then(response => response.json())
+	.then(response => {
+		console.log(response);
+		main.innerHTML = `<div class="single">
+            <div class="inner">
+                <h3>${response.anime}</h3>
+                <p>
+                    ${response.quote}
+                </p>
+                <h4>~ ${response.character} ~</h4>
+            </div>
+        </div>
+        `;
+	})
+	.catch(err => console.error(err));
 
 // functions
 
